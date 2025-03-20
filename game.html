@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Card Challenge: Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add HTML2Canvas library -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body class="game-page">
+    <div class="container" id="game-container">
+        <h1>REAL or NFC?</h1>
+        
+        <div id="card-container">
+            <img id="card-image" src="" alt="Pokémon card">
+            <div id="feedback" class="hidden"></div>
+        </div>
+        
+        <div class="button-container">
+            <button id="real-button" class="choice-button">REAL</button>
+            <button id="nfc-button" class="choice-button">NFC</button>
+        </div>
+        
+        <div class="score-container">
+            <div class="score-item">
+                <span>Guessed:</span>
+                <span id="guessed">0</span>
+            </div>
+            <div class="score-item">
+                <span>Remaining:</span>
+                <span id="remaining">18</span>
+            </div>
+            <div class="score-item">
+                <span>Accuracy:</span>
+                <span id="accuracy">0%</span>
+            </div>
+        </div>
+        
+        <div id="results-section" class="hidden">
+            <h2>Your Final Results</h2>
+            <p class="final-score">Accuracy: <span id="final-accuracy">0%</span></p>
+            <p class="final-score">Score: <span id="final-correct">0</span> / <span id="final-total">18</span></p>
+        </div>
+        
+        <button id="download-button" class="download-button hidden">Save Results as Image</button>
+        
+        <a href="index.html" class="home-button">Back to Home</a>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
