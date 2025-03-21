@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon Card Challenge: Real or NFC?</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G58GDQFW27"></script>
+    <script src="js/analytics.js"></script>
 </head>
 <body class="splash-page">
     <div class="container">
@@ -13,7 +16,7 @@
         
         <div class="instructions">
             <h3>How to Play:</h3>
-            <p>You'll be shown a series of Pokémon cards one at a time.</p>
+            <p>You'll be shown a series of Pokémon card corners one at a time, not the entire card.</p>
             <p>Your task is to determine if each card is:</p>
             <ul>
                 <li><strong>REAL</strong> - A genuine factory miscut card</li>
@@ -27,6 +30,7 @@
             <h3>How We Verify Card Authenticity</h3>
             <p>All real cards shown on this site are photos of non-error cards I personally opened from sealed packs. 
             The NFC cards were explicitly purchased as NFCs from third-party sellers.</p>
+            <p>This game is part of a project to develop an automated NFC detector. Check out the bot that can detect the difference between factory-cut and NFC cards at <a href="https://github.com/Burke9077/nfc-detector" target="_blank">github.com/Burke9077/nfc-detector</a>.</p>
         </div>
 
         <a href="game.html" class="play-button">PLAY NOW</a>
